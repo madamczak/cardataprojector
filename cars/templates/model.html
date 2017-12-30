@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>{{ chosen_brand }}</title>
+    </head>
+    <body>
+        <h1>{{ chosen_model }}</h1>
+
+        <form method="POST">
+             <select name="version_item">
+                 <option selected="selected">--</option>
+                 {% for version in versions %}
+                    <option value={{ version }} id="chosen_version">{{version}}</option>
+                 {% endfor %}
+            </select>
+            <button name="foo" value="upvote">Go</button>
+            {% csrf_token %}
+        </form>
+
+        <form method="POST">
+            <button name="back" value="back1">Back to {{ chosen_brand }}</button>
+            <button name="back" value="reset">Reset</button>
+            {% csrf_token %}
+        </form>
+
+        <table id="brandstable">
+            {% for item in items %}
+                <tr><td>{{ item }}</td></tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

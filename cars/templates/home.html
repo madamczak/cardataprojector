@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>To-Do lists</title>
+    </head>
+    <body>
+        <h1>Cars data</h1>
+        <form method="POST">
+             <select name="brand_item">
+                 <option selected="selected">--</option>
+                 {% for brand in brands %}
+                    <option value={{ brand }} id="chosen_brand">{{brand}}</option>
+                 {% endfor %}
+            </select>
+
+            <!--<select name="model_item">-->
+                 <!--{% for model in models %}-->
+                    <!--<option value={{ model }} id="chosen_model">{{model}}</option>-->
+                 <!--{% endfor %}-->
+            <!--</select>-->
+
+            <!--<select name="model_item">-->
+                 <!--{% for version in versions %}-->
+                    <!--<option value={{ version }} id="chosen_version">{{version}}</option>-->
+                 <!--{% endfor %}-->
+            <!--</select>-->
+            {% csrf_token %}
+
+            <button name="foo" value="upvote">Go</button>
+        </form>
+    </body>
+</html>
