@@ -4,11 +4,14 @@
     </head>
     <body>
         <h1>Cars data</h1>
+
+        <br>
+
         <form method="POST">
              <select name="brand_item">
                  <option selected="selected">--</option>
                  {% for brand in brands %}
-                    <option value={{ brand }} id="chosen_brand">{{brand}}</option>
+                    <option value="{{ brand }}" id="chosen_brand">{{brand}}</option>
                  {% endfor %}
             </select>
 

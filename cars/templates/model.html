@@ -5,11 +5,18 @@
     <body>
         <h1>{{ chosen_model }}</h1>
 
+        <div>
+            Average mileage: {{ averageMileage }} km
+            <br>
+            Average price: {{ averagePrice }} PLN
+        </div>
+        <br>
+
         <form method="POST">
              <select name="version_item">
                  <option selected="selected">--</option>
                  {% for version in versions %}
-                    <option value={{ version }} id="chosen_version">{{version}}</option>
+                    <option value="{{ version }}" id="chosen_version">{{version}}</option>
                  {% endfor %}
             </select>
             <button name="foo" value="upvote">Go</button>

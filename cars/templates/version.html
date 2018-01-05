@@ -2,8 +2,13 @@
     <head>
         <title>{{ chosen_brand }}</title>
     </head>
-    <body>
         <h1>{{ chosen_version }}</h1>
+        <div>
+            Average mileage: {{ averageMileage }} km
+            <br>
+            Average price: {{ averagePrice }} PLN
+        </div>
+        <br>
 
         <form method="POST">
             <button name="back" value="reset">Reset</button>

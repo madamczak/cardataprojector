@@ -4,11 +4,18 @@
     </head>
     <body>
         <h1>{{ chosen_brand }}</h1>
+
+        <div>
+            Average mileage: {{ averageMileage }} km
+            <br>
+            Average price: {{ averagePrice }} PLN
+        </div>
+
         <form method="POST">
              <select name="model_item">
                  <option selected="selected">--</option>
                  {% for model in models %}
-                    <option value={{ model }} id="chosen_model">{{model}}</option>
+                    <option value="{{ model }}" id="chosen_model">{{model}}</option>
                  {% endfor %}
              </select>
 

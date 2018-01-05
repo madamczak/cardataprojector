@@ -77,13 +77,13 @@ WSGI_APPLICATION = 'carsprojector.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'refactor_test4.db'),
     },
 
-    'cardata': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'refactor_test4.db'),
-    }
+    # 'cardata': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'refactor_test6.db'),
+    # }
 }
 
 
