@@ -41,8 +41,12 @@ def view_brand_data(request, brand_name):
     for brand in bds:
         rows.update(Car.objects.filter(B_Id=brand.B_Id))
 
-    avgMileage = int(sum([car.mileage for car in rows]) / len(rows))
-    avgPrice = int(sum([car.price for car in rows]) / len(rows))
+    if rows:
+        avgMileage = int(sum([car.mileage for car in rows]) / len(rows))
+        avgPrice = int(sum([car.price for car in rows]) / len(rows))
+    else:
+        avgMileage = 0
+        avgPrice = 0
 
     #note the replacement in brand name
     return render(request, 'brand.html', {'items': rows,
@@ -74,8 +78,12 @@ def view_model_data(request, brand_name, model_name):
     for model in mds:
         rows.update(Car.objects.filter(B_Id=model.B_Id))
 
-    avgMileage = int(sum([car.mileage for car in rows]) / len(rows))
-    avgPrice = int(sum([car.price for car in rows]) / len(rows))
+    if rows:
+        avgMileage = int(sum([car.mileage for car in rows]) / len(rows))
+        avgPrice = int(sum([car.price for car in rows]) / len(rows))
+    else:
+        avgMileage = 0
+        avgPrice = 0
 
     return render(request, 'model.html', {'items': rows, 'chosen_brand': brand_name,
                                           'chosen_model': model_name.replace(" ", "_"),
@@ -103,8 +111,12 @@ def view_version_data(request, brand_name, model_name, version_name):
 
     rows.update(cars)
 
-    avgMileage = int(sum([car.mileage for car in cars])/len(cars))
-    avgPrice = int(sum([car.price for car in cars])/len(cars))
+    if cars:
+        avgMileage = int(sum([car.mileage for car in cars])/len(cars))
+        avgPrice = int(sum([car.price for car in cars])/len(cars))
+    else:
+        avgMileage = 0
+        avgPrice = 0
 
     return render(request, 'version.html', {'items': rows, 'chosen_brand': brand_name,
                                             'chosen_model': model_name,

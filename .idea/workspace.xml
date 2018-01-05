@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd219905-8510-464d-a65e-3fc50e325709" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/carsprojector.iml" afterPath="$PROJECT_DIR$/.idea/carsprojector.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cars/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/cars/migrations/0001_initial.py" />
-      <change beforePath="$PROJECT_DIR$/cars/migrations/0002_auto_20171201_2055.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cars/models.py" afterPath="$PROJECT_DIR$/cars/models.py" />
-      <change beforePath="$PROJECT_DIR$/cars/operations/db_operations.py" afterPath="$PROJECT_DIR$/cars/operations/db_operations.py" />
-      <change beforePath="$PROJECT_DIR$/cars/templates/brand.html" afterPath="$PROJECT_DIR$/cars/templates/brand.html" />
-      <change beforePath="$PROJECT_DIR$/cars/templates/home.html" afterPath="$PROJECT_DIR$/cars/templates/home.html" />
-      <change beforePath="$PROJECT_DIR$/cars/templates/model.html" afterPath="$PROJECT_DIR$/cars/templates/model.html" />
-      <change beforePath="$PROJECT_DIR$/cars/templates/version.html" afterPath="$PROJECT_DIR$/cars/templates/version.html" />
       <change beforePath="$PROJECT_DIR$/cars/views.py" afterPath="$PROJECT_DIR$/cars/views.py" />
-      <change beforePath="$PROJECT_DIR$/carsprojector/settings.py" afterPath="$PROJECT_DIR$/carsprojector/settings.py" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/refactor_test4.db" afterPath="$PROJECT_DIR$/refactor_test4.db" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +19,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cars/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="118" column="20" lean-forward="false" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -76,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/cars/templates/version.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="14" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
+              <caret line="9" column="14" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -631,7 +617,7 @@
     <entry file="file://$PROJECT_DIR$/cars/templates/version.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
+          <caret line="9" column="14" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="9" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -670,8 +656,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cars/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="476">
+          <caret line="118" column="20" lean-forward="false" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="20" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
